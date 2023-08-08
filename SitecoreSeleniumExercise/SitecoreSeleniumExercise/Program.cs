@@ -17,12 +17,14 @@ namespace SitecoreSeleniumExercise
             // driver will not be insert as arg here as it comes along with the selenium nuget package already
             IWebDriver driver = new ChromeDriver();
 
-            // can change the url to singapore one if dont want to manual entry for captcha
+            // can change the url to singapore (https://www.amazon.sg) if dont want to manual entry for captcha
+            // driver.Navigate().GoToUrl("https://www.amazon.sg/");
             driver.Navigate().GoToUrl("https://www.amazon.com/");
 
             string captcha;
 
-            // manual entry for captcha
+            // another workaround if get captcha
+            // user can manually enter captcha via console app
             if (IsCaptchaPage(driver))
             {
                 Console.WriteLine("Please enter CAPTCHA: ");
@@ -45,15 +47,17 @@ namespace SitecoreSeleniumExercise
             submitSearch.Click();
 
             // get first result item
-            IWebElement firstResult = driver.FindElement(By.XPath("//span[@class='a-size-medium a-color-base a-text-normal']"));
+            IWebElement firstResult = driver.FindElement(By.XPath("//div[@data-csa-c-pos='1']//h2/a"));
             firstResult.Click();
 
             // get price
             IWebElement itemPriceWhole = driver.FindElement(By.XPath("//span[@class='a-price-whole']"));
             IWebElement itemPriceDecimal = driver.FindElement(By.XPath("//span[@class='a-price-fraction']"));
 
+            // concat string to make it into a complete price decimal
             string itemPriceString = itemPriceWhole.Text + '.' + itemPriceDecimal.Text;
 
+            // convert string to double
             double itemPrice = ConvertString(itemPriceString);
 
             // assert > 100
@@ -62,7 +66,7 @@ namespace SitecoreSeleniumExercise
                 throw new Exception("Laptop price is not more than $100.00, the price is $" +  itemPrice);
             }
 
-            Console.WriteLine("Laptop price is more than $100.00, test passed...");
+            Console.WriteLine("Laptop price is more than $100.00...");
 
             driver.Quit();
 
@@ -82,7 +86,7 @@ namespace SitecoreSeleniumExercise
             }
         }
 
-        // convert string to decimal
+        // to convert string to double
         static double ConvertString(string s)
         {
             double d;
