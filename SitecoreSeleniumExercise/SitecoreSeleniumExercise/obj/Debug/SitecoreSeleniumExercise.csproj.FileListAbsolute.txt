@@ -1,0 +1,13 @@
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\bin\Debug\SitecoreSeleniumExercise.exe.config
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\bin\Debug\SitecoreSeleniumExercise.exe
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\bin\Debug\SitecoreSeleniumExercise.pdb
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\bin\Debug\WebDriver.dll
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\obj\Debug\SitecoreSeleniumExercise.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\obj\Debug\SitecoreSeleniumExercise.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\obj\Debug\SitecoreSeleniumExercise.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\obj\Debug\SitecoreSeleniumExercise.csproj.CopyComplete
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\obj\Debug\SitecoreSeleniumExercise.exe
+C:\Users\PC\source\repos\SitecoreSeleniumExercise\SitecoreSeleniumExercise\obj\Debug\SitecoreSeleniumExercise.pdb
